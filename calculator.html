@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Reem+Kufi:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+*
+        {
+            font-family: 'Reem Kufi', sans-serif;
+        }        
+.content
+        {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-left: 200px;
+            margin-right: 200px;
+            padding: 100px;
+            background-color: #ececec;
+            height: 100vh;
+            box-shadow: 0 0 10px 0;
+        }
+#title
+        {
+            text-align: center;
+        }        
+#result
+        {
+            margin: 0%;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 10px;
+            display: inline-block;
+            background-color: #fefefe;
+            width: 850px;
+            height: 50px;
+            font-weight: lighter;
+            font-size: 30px;
+            text-align: left;
+            border: none;
+            box-shadow: 0 0 4px 0;
+        }      
+#first
+        {
+            width: 423px;
+            height: 80px;
+            font-weight: 800px;
+            font-size: 30px;
+            border: none;
+            box-shadow: 0 0 5px 0;
+            background-color: #6e517e;
+            color: #fff;
+            margin-top: 20px;
+            margin-right: 8px;
+        }          
+#second
+        {   
+            width: 423px;
+            height: 80px;
+            font-weight: 800px;
+            font-size: 30px;
+            border: none;
+            box-shadow: 0 0 5px 0;
+            background-color: #6e517e;
+            margin-top: 20px;
+            color: #fff;
+
+        }
+h5
+        {
+            display: inline-block;
+            margin: 0%;
+        }            
+.operators
+        {
+            width: 280px;
+            height: 80px;
+            font-weight: 800px;
+            font-size: 30px;
+            border: none;
+            box-shadow: 0 0 5px 0;
+            background-color: #4d939b;
+            margin-top: 20px;
+            color: #000;
+            margin-right: 4px;
+        }            
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 id="title">Hello ...</h1>
+        <script>
+            x=prompt('enter your name')
+            title.textContent = 'Hello ' +x
+        </script>
+        <div>
+            <h6 id="result">result</h6>
+        </div>
+        <div>
+            <button id="first">First Number</button>
+            <button id="second">Second Number</button>
+        </div>
+        <script>
+            first.addEventListener('click',function()
+            {
+                y=Number(prompt('enter the first number'))
+                first.innerHTML=`<h5>First Number(${y})</h5>`
+            })
+        </script>
+        <script>
+            second.addEventListener('click',function()
+            {
+                z=Number(prompt('enter the second number'))
+                second.innerHTML=`<h5>Second Number(${z})</h5>`
+            })
+        </script>
+        <div>
+            <button id="plus" class="operators">+</button>
+            <script>
+                plus.addEventListener('click',function()
+            {
+                result.textContent= y+z
+            })
+            </script>
+            <button id="minus" class="operators">-</button>
+            <script>
+                minus.addEventListener('click',function()
+            {
+                result.textContent= y-z
+            })
+            </script>
+            <button id="multiple" class="operators">*</button>
+            <script>
+                multiple.addEventListener('click',function()
+            {
+                result.textContent= y*z
+            })
+            </script>
+            <button id="divison" class="operators">/</button>
+            <script>
+                divison.addEventListener('click',function()
+            {
+                result.textContent= y/z
+            })
+            </script>
+            <button id="Exponentiation" class="operators">**</button> 
+            <script>
+                Exponentiation.addEventListener('click',function()
+            {
+                result.textContent= y**z
+            })
+            </script>
+            <button id="sin" class="operators">sin</button>
+            <script>
+                sin.addEventListener('click',function()
+            {
+                result.textContent=  Math.sin(y * Math.PI / 180);
+                result.textContent=  Math.sin(z * Math.PI / 180);
+            })
+            </script>
+            <button id="cos" class="operators">cos</button>
+            <script>
+                cos.addEventListener('click',function()
+            {
+                result.textContent=  Math.cos(y * Math.PI / 180);  
+                result.textContent=  Math.cos(z * Math.PI / 180);  
+            })
+            </script>
+            <button id="log" class="operators">log</button>
+            <script>
+                log.addEventListener('click',function()
+            {
+                result.textContent=  Math.log(y);  
+                result.textContent=  Math.log(z);  
+            })
+            </script>
+            <button id="ceil" class="operators">ceil</button>
+            <script>
+                ceil.addEventListener('click',function()
+            {
+                result.textContent=   Math.ceil(y);
+                result.textContent=   Math.ceil(z);  
+            })
+            </script>
+            <button id="floor" class="operators">floor</button>
+            <script>
+                floor.addEventListener('click',function()
+            {
+                result.textContent=   Math.floor(y); 
+                result.textContent=   Math.floor(z);  
+            })
+            </script>
+            <button id="circumference" class="operators">circumference</button>
+            <script>
+                circumference.addEventListener('click',function()
+            {
+                result.textContent=   2*Math.PI*y; 
+                result.textContent=   2*Math.PI*z; 
+            })
+            </script>
+            <button id="area" class="operators">area</button>     
+            <script>
+                area.addEventListener('click',function()
+            {
+                result.textContent=   Math.PI*(y*y); 
+                result.textContent=   Math.PI*(z*z); 
+            })
+            </script>      
+        </div>
+    </div>
+</body>
+</html>
